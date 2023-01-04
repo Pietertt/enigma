@@ -63,7 +63,7 @@ TEST_CASE ("The machine can be built", "[machine]") {
         REQUIRE (enigma->getRotors()->at(0)->getCharacters()->at(1)->getOutput() == 9);
     }
 
-    SECTION ("The position of a rotor can be manually set backwards") {
+    SECTION ("The position of a rotor can be set backwards manually") {
         REQUIRE (enigma->getRotors()->at(0)->getCharacters()->at(0)->getOutput() == 9);
 
         enigma->getRotors()->at(0)->rotate();
@@ -75,7 +75,7 @@ TEST_CASE ("The machine can be built", "[machine]") {
         REQUIRE (enigma->getRotors()->at(0)->getCharacters()->at(0)->getOutput() == 9);
     }
 
-    SECTION ("The position of a rotor can be manually set forwards") {
+    SECTION ("The position of a rotor can be set forwards manually") {
         REQUIRE (enigma->getRotors()->at(0)->getCharacters()->at(0)->getOutput() == 9);
 
         enigma->getRotors()->at(0)->rotate();
